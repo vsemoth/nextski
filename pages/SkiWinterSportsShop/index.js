@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from "./../../components/Footer";
 import styles from '../styles/Home.module.css'
 
 const Shop = () => {
@@ -14,6 +15,7 @@ const Shop = () => {
         <h1 className={styles.title}>{`Ski & Winter Sports Shop`}</h1>
         <p>Welcome to The Ski and Winter Sports Shop website.</p>
       </main>
+      <Footer />
     </div>
   );
 };

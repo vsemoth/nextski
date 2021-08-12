@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Footer from "./../../components/Footer";
 import styles from '../../styles/Home.module.css'
 
 const SkiDeck = () => {
@@ -12,8 +13,9 @@ const SkiDeck = () => {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>The Ski Deck</h1>
-        <p>Welcome to The Ski Deck's website.</p>
+        <p>Welcome to The Ski Deck\'s website.</p>
       </main>
+      <Footer />
     </div>
   );
 };

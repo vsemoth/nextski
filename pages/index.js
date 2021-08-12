@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Footer from "./../components/Footer";
 import Link from "next/dist/client/link";
 import styles from "./../styles/Home.module.css";
 import { useRouter } from "next/dist/client/router";
@@ -33,41 +33,31 @@ export default function Home() {
 
         <div className={styles.grid}>
           <h3>How can we help you?</h3>
-          <p>
-            <Link href="/TheSkiDeck">
-              <a>Ski Lessons</a>
-            </Link>
-          </p>
-          <p>
-            <Link href="/TheSkiDeck">
-              <a>Ski Clothing</a>
-            </Link>
-          </p>
-          <p>
-            <Link href="/KidsFunParties">
-              <a>Kids Fun Parties</a>
-            </Link>
-          </p>
-          <p>
-            <Link href="/KidsFunParties">
-              <a>Family Fun</a>
-            </Link>
-          </p>
+          <ul>
+            <li>
+              <Link href="/TheSkiDeck">
+                <a>Ski Lessons</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/TheSkiDeck">
+                <a>Ski Clothing</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/KidsFunParties">
+                <a>Kids Fun Parties</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/KidsFunParties">
+                <a>Family Fun</a>
+              </Link>
+            </li>
+          </ul>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }
