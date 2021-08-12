@@ -13,7 +13,7 @@ const SkiDeck = () => {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>The Ski Deck</h1>
-        <p>Welcome to The Ski Deck\'s website.</p>
+        <p>Welcome to The Ski Deck&apos;s website.</p>
       </main>
       <Footer />
     </div>

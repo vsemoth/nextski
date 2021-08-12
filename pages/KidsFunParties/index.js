@@ -13,7 +13,7 @@ const Parties = () => {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Kids Fun Parties</h1>
-        <p>Welcome to The Ski Deck\'s Kids Fun Parties website.</p>
+        <p>Welcome to The Ski Deck&apos;s Kids Fun Parties website.</p>
       </main>
       <Footer />
     </div>
