@@ -5,13 +5,13 @@ import styles from "./../styles/Home.module.css";
 import { useRouter } from "next/dist/client/router";
 
 export default function Home() {
+  const router = useRouter();
+
   if (process.browser || typeof window !== "undefined") {
     console.log(window.location.protocol + `//` + window.location.host)
     if(window.location.host == "ski.co.za") {
-      const router = useRouter();
       router.push(`TheSkiDeck`);
     } else if (window.location.host == "kidsfunparties.co.za") {
-      const router = useRouter()
       router.push(`KidsFunParties`)
     }
   }
